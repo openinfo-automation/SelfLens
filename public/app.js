@@ -93,4 +93,6 @@ function SelfLens() {
 }
 
 // Render the app
-ReactDOM.render(<SelfLens />, document.getElementById('root'));
+const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(rootElement);
+root.render(<SelfLens />);
